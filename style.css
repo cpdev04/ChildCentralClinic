@@ -3946,13 +3946,15 @@ body,
 }
 
 .team-default-area .item .thumb .contact {
-  background: linear-gradient(90deg, rgba(30,190,182,1) 0%, rgba(0,130,124,1) 100%);
+  /* background: linear-gradient(90deg, rgba(30,190,182,1) 0%, rgba(0,130,124,1) 100%); */
   position: absolute;
   left: 50%;
   bottom: -25px;
   transform: translate(-50%, 0);
   padding: 10px 25px;
   border-radius: 30px;
+  background: #ffffff;
+  border: 3px solid #0F8DA9;;
 }
 
 .team-default-area .item {
