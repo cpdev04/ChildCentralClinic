@@ -1,5 +1,4 @@
-
-    .founder-message {
+.founder-message {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,6 +8,8 @@
   position: relative;
   overflow: hidden;
   margin-bottom: 100px;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .founder-message::before {
@@ -16,8 +17,8 @@
   position: absolute;
   top: -150px;
   left: -150px;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   background: linear-gradient(135deg, #6a89cc, #b8e994);
   border-radius: 50%;
   z-index: 0;
@@ -28,7 +29,7 @@
   position: relative;
   z-index: 1;
   background: #ffffff;
-  padding: 30px;
+  padding: 12px;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   max-width: 400px;
@@ -65,9 +66,10 @@
 
 .founder-message-text {
   font-size: 16px;
-  line-height: 1.8;
+  /* line-height: 1.8; */
   color: #555;
   font-family: 'Arial', sans-serif;
+  text-align: start;
 }
 
 .founder-message-text::before {
