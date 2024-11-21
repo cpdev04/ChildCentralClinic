@@ -2268,7 +2268,7 @@ nav.navbar.bootsnav {
   }
 
   nav.navbar.bootsnav.bg-theme .logo.desktop {
-    display: none;
+    display: block;
   }
 
   nav.navbar.nav-box.bootsnav.navbar-fixed img {
@@ -3147,6 +3147,7 @@ ul.cart-list > li.total > .btn {
 
   nav.navbar .navbar-brand img.logo {
     height: 30px;
+    width: 100%;
   }
 
   .attr-nav > ul > li > a {

@@ -114,6 +114,7 @@ label {
   max-width: 100%;
 }
 
+
 a, .btn, button {
   transition: all 0.35s ease-in-out;
   -webkit-transition: all 0.35s ease-in-out;
@@ -243,6 +244,9 @@ input {
 @media (min-width:768px) {
   .container-medium {
     max-width: 720px;
+  }
+  .logosm{
+    display: block;
   }
 }
 
