@@ -2,16 +2,21 @@
 
 
 .hero {
-  background: #F7F7F7;
+  /* background: #F05359; */
+  background-image: url('../img/banners/review.webp');
+  background-size: cover;
   height: 80vh;
   width: 100%;
   position: relative;
+  padding-top:10px ;
 }
 
 .hero  h1{
   text-align: center;
-  font-size: 40px;
-  color: #962d2d;
+  font-size: 60px;
+   color: #FFFFFF;
+   font-weight: 900;
+   
 }
 
 .slide-row {
@@ -40,11 +45,11 @@
 }
 
 .user-text p {
-    color: white;
+    color: #FECD5B;
 }
 
 .user-text {
-  background: #343f56;
+  background: #1C3278;
   width: 100%;
   height: 360px;
   position: absolute;
@@ -61,11 +66,14 @@
 .user-text p{
   font-size: 18px;
   line-height: 24px;
+  
 }
 
 .user-text h3 {
   margin: 35px 0 5px;
-/*   color: #e798ae; */
+  color: #76BF99;
+  font-size: 35px;
+  font-weight: 600;
 }
 
 .container1 {
