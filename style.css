@@ -157,6 +157,16 @@ html, body, .wrapper {
   display: inline-block !important;
 }
 
+.s3{
+  font-weight: 900 !important;
+  font-size: 60px!important ;
+  color: #F05359!important ;
+  text-transform: none!important ;
+  display: inline-block !important;
+}
+
+
+
 /* buttons */
 
 h1, h2, h3, h4, h5, h6 {
