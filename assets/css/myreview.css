@@ -1,0 +1,108 @@
+/* Testimonial Container Styling */
+.testimonial-container {
+    width: 100%;
+    height: 80vh;
+    /* Increased height */
+    margin: auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    position: relative;
+    background-image: url('../img/banners/review.jpg');
+    background-size: cover;
+    background-position: center center;
+
+    /* Flexbox for Centering */
+    display: flex;
+    align-items: center;
+    /* Vertical centering */
+    justify-content: center;
+    /* Horizontal centering */
+    flex-direction: column;
+    /* Stack content vertically */
+}
+
+/* Testimonial Box */
+.testimonial-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.testimonial-content {
+    max-width: 700px;
+    text-align: center;
+}
+
+/* Author Image */
+.testimonial-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 15px auto;
+}
+
+/* Author Name */
+.testimonial-author {
+    font-size: 1.5rem;
+    color: #2b7e2d;
+    /* Green color */
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Testimonial Text */
+.testimonial-text {
+    line-height: 1.5;
+    font-size: 17px;
+    color: #0b0b0b;
+    font-weight: 600;
+    padding: 0px 0px !important;
+    margin-top: -4px;
+}
+
+/* Navigation Arrows */
+.arrow {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #666;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.arrow:hover {
+    color: #333;
+}
+
+.left-arrow {
+    position: absolute;
+    left: 10%;
+}
+
+.right-arrow {
+    position: absolute;
+    right: 10%;
+}
+
+/* Dot Indicators */
+.testimonial-dots {
+    margin-top: 20px;
+    /* Space between review and dots */
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #0087A5;
+    /* Green color */
+}

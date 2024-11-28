@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Child Central Clinic">
+
+    <!-- ========== Page Title ========== -->
+    <title>Child Central Clinic</title>
+
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/themify-icons.css" rel="stylesheet" />
+    <link href="assets/css/flaticon-set.css" rel="stylesheet" />
+    <link href="assets/css/magnific-popup.css" rel="stylesheet" />
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.css" rel="stylesheet" />
+    <link href="assets/css/bootsnav.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+    <!-- ========== End Stylesheet ========== -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5/html5shiv.min.js"></script>
+      <script src="assets/js/html5/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ========== Google Fonts ========== -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+       
+        *,
+        *:after,
+        *:before {
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+            cursor: default;
+        }
+        
+        
+        
+        .myreview {
+          font-family: 'Montserrat', sans-serif!important;
+            width: 100%;
+            height: auto;
+            font-size: 14px;
+        /*     font-family: Dubai-Light; */
+                background: #fff;
+          overflow:hidden;
+        }
+        .testim {
+                width: 100%;
+                position: absolute;
+                top: 50%;
+                -webkit-transform: translatey(-50%);
+                -moz-transform: translatey(-50%);
+                -ms-transform: translatey(-50%);
+                -o-transform: translatey(-50%);
+                transform: translatey(-50%);
+        }
+        
+        .testim .wrap {
+            position: relative;
+            width: 100%;
+            max-width: 1020px;
+            padding: 40px 20px;
+            margin: auto;
+        }
+        
+        .testim .arrow {
+            display: block;
+            position: absolute;
+            color: #333;
+            cursor: pointer;
+            font-size: 2em;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -moz-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                transform: translateY(-50%);
+            -webkit-transition: all .3s ease-in-out;    
+            -ms-transition: all .3s ease-in-out;    
+            -moz-transition: all .3s ease-in-out;    
+            -o-transition: all .3s ease-in-out;    
+            transition: all .3s ease-in-out;
+            padding: 5px;
+            z-index: 22222222;
+        }
+        
+        .testim .arrow:before {
+                cursor: pointer;
+        }
+        
+        .testim .arrow:hover {
+            color: green;
+        }
+            
+        
+        .testim .arrow.left {
+            left: 70px;
+        }
+        
+        .testim .arrow.right {
+            right: 70px;
+        }
+        
+        .testim .dots {
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            bottom: 60px;
+            left: 0;
+            display: block;
+            z-index: 3333;
+                height: 12px;
+        }
+        
+        .testim .dots .dot {
+            list-style-type: none;
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 1px solid green;
+            margin: 0 10px;
+            cursor: pointer;
+            -webkit-transition: all .5s ease-in-out;    
+            -ms-transition: all .5s ease-in-out;    
+            -moz-transition: all .5s ease-in-out;    
+            -o-transition: all .5s ease-in-out;    
+            transition: all .5s ease-in-out;
+                position: relative;
+        }
+        
+        .testim .dots .dot.active,
+        .testim .dots .dot:hover {
+            background: green;
+            border-color: green;
+        }
+        
+        .testim .dots .dot.active {
+            -webkit-animation: testim-scale .5s ease-in-out forwards;   
+            -moz-animation: testim-scale .5s ease-in-out forwards;   
+            -ms-animation: testim-scale .5s ease-in-out forwards;   
+            -o-animation: testim-scale .5s ease-in-out forwards;   
+            animation: testim-scale .5s ease-in-out forwards;   
+        }
+            
+        .testim .cont {
+            position: relative;
+                overflow: hidden;
+        }
+        
+        .testim .cont > div {
+            text-align: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 0 0 70px 0;
+            opacity: 0;
+        }
+        
+        .testim .cont > div.inactive {
+            opacity: 1;
+        }
+            
+        
+        .testim .cont > div.active {
+            position: relative;
+            opacity: 1;
+        }
+            
+        
+        .testim .cont div .img img {
+            display: block;
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            border-radius: 50%;
+        }
+        
+        .testim .cont div h2 {
+            color: green;
+            font-size: 1em;
+            margin: 15px 0;
+        }
+        
+        .testim .cont div p {
+            font-size: 1.15em;
+            color: #333;
+            width: 70%;
+            margin: auto;
+        }
+        
+        .testim .cont div.active .img img {
+            -webkit-animation: testim-show .5s ease-in-out forwards;            
+            -moz-animation: testim-show .5s ease-in-out forwards;            
+            -ms-animation: testim-show .5s ease-in-out forwards;            
+            -o-animation: testim-show .5s ease-in-out forwards;            
+            animation: testim-show .5s ease-in-out forwards;            
+        }
+        
+        .testim .cont div.active h2 {
+            -webkit-animation: testim-content-in .4s ease-in-out forwards;    
+            -moz-animation: testim-content-in .4s ease-in-out forwards;    
+            -ms-animation: testim-content-in .4s ease-in-out forwards;    
+            -o-animation: testim-content-in .4s ease-in-out forwards;    
+            animation: testim-content-in .4s ease-in-out forwards;    
+        }
+        
+        .testim .cont div.active p {
+            -webkit-animation: testim-content-in .5s ease-in-out forwards;    
+            -moz-animation: testim-content-in .5s ease-in-out forwards;    
+            -ms-animation: testim-content-in .5s ease-in-out forwards;    
+            -o-animation: testim-content-in .5s ease-in-out forwards;    
+            animation: testim-content-in .5s ease-in-out forwards;    
+        }
+        
+        .testim .cont div.inactive .img img {
+            -webkit-animation: testim-hide .5s ease-in-out forwards;            
+            -moz-animation: testim-hide .5s ease-in-out forwards;            
+            -ms-animation: testim-hide .5s ease-in-out forwards;            
+            -o-animation: testim-hide .5s ease-in-out forwards;            
+            animation: testim-hide .5s ease-in-out forwards;            
+        }
+        
+        .testim .cont div.inactive h2 {
+            -webkit-animation: testim-content-out .4s ease-in-out forwards;        
+            -moz-animation: testim-content-out .4s ease-in-out forwards;        
+            -ms-animation: testim-content-out .4s ease-in-out forwards;        
+            -o-animation: testim-content-out .4s ease-in-out forwards;        
+            animation: testim-content-out .4s ease-in-out forwards;        
+        }
+        
+        .testim .cont div.inactive p {
+            -webkit-animation: testim-content-out .5s ease-in-out forwards;    
+            -moz-animation: testim-content-out .5s ease-in-out forwards;    
+            -ms-animation: testim-content-out .5s ease-in-out forwards;    
+            -o-animation: testim-content-out .5s ease-in-out forwards;    
+            animation: testim-content-out .5s ease-in-out forwards;    
+        }
+        
+        @-webkit-keyframes testim-scale {
+            0% {
+                -webkit-box-shadow: 0px 0px 0px 0px #eee;
+                box-shadow: 0px 0px 0px 0px #eee;
+            }
+        
+            35% {
+                -webkit-box-shadow: 0px 0px 10px 5px #eee;        
+                box-shadow: 0px 0px 10px 5px #eee;        
+            }
+        
+            70% {
+                -webkit-box-shadow: 0px 0px 10px 5px #ea830e;        
+                box-shadow: 0px 0px 10px 5px #ea830e;        
+            }
+        
+            100% {
+                -webkit-box-shadow: 0px 0px 0px 0px #ea830e;        
+                box-shadow: 0px 0px 0px 0px #ea830e;        
+            }
+        }
+        
+        @-moz-keyframes testim-scale {
+            0% {
+                -moz-box-shadow: 0px 0px 0px 0px #eee;
+                box-shadow: 0px 0px 0px 0px #eee;
+            }
+        
+            35% {
+                -moz-box-shadow: 0px 0px 10px 5px #eee;        
+                box-shadow: 0px 0px 10px 5px #eee;        
+            }
+        
+            70% {
+                -moz-box-shadow: 0px 0px 10px 5px #ea830e;        
+                box-shadow: 0px 0px 10px 5px #ea830e;        
+            }
+        
+            100% {
+                -moz-box-shadow: 0px 0px 0px 0px #ea830e;        
+                box-shadow: 0px 0px 0px 0px #ea830e;        
+            }
+        }
+        
+        @-ms-keyframes testim-scale {
+            0% {
+                -ms-box-shadow: 0px 0px 0px 0px #eee;
+                box-shadow: 0px 0px 0px 0px #eee;
+            }
+        
+            35% {
+                -ms-box-shadow: 0px 0px 10px 5px #eee;        
+                box-shadow: 0px 0px 10px 5px #eee;        
+            }
+        
+            70% {
+                -ms-box-shadow: 0px 0px 10px 5px #ea830e;        
+                box-shadow: 0px 0px 10px 5px #ea830e;        
+            }
+        
+            100% {
+                -ms-box-shadow: 0px 0px 0px 0px #ea830e;        
+                box-shadow: 0px 0px 0px 0px #ea830e;        
+            }
+        }
+        
+        @-o-keyframes testim-scale {
+            0% {
+                -o-box-shadow: 0px 0px 0px 0px #eee;
+                box-shadow: 0px 0px 0px 0px #eee;
+            }
+        
+            35% {
+                -o-box-shadow: 0px 0px 10px 5px #eee;        
+                box-shadow: 0px 0px 10px 5px #eee;        
+            }
+        
+            70% {
+                -o-box-shadow: 0px 0px 10px 5px #ea830e;        
+                box-shadow: 0px 0px 10px 5px #ea830e;        
+            }
+        
+            100% {
+                -o-box-shadow: 0px 0px 0px 0px #ea830e;        
+                box-shadow: 0px 0px 0px 0px #ea830e;        
+            }
+        }
+        
+        @keyframes testim-scale {
+            0% {
+                box-shadow: 0px 0px 0px 0px #eee;
+            }
+        
+            35% {
+                box-shadow: 0px 0px 10px 5px #eee;        
+            }
+        
+            70% {
+                box-shadow: 0px 0px 10px 5px #ea830e;        
+            }
+        
+            100% {
+                box-shadow: 0px 0px 0px 0px #ea830e;        
+            }
+        }
+        
+        @-webkit-keyframes testim-content-in {
+            from {
+                opacity: 0;
+                -webkit-transform: translateY(100%);
+                transform: translateY(100%);
+            }
+            
+            to {
+                opacity: 1;
+                -webkit-transform: translateY(0);        
+                transform: translateY(0);        
+            }
+        }
+        
+        @-moz-keyframes testim-content-in {
+            from {
+                opacity: 0;
+                -moz-transform: translateY(100%);
+                transform: translateY(100%);
+            }
+            
+            to {
+                opacity: 1;
+                -moz-transform: translateY(0);        
+                transform: translateY(0);        
+            }
+        }
+        
+        @-ms-keyframes testim-content-in {
+            from {
+                opacity: 0;
+                -ms-transform: translateY(100%);
+                transform: translateY(100%);
+            }
+            
+            to {
+                opacity: 1;
+                -ms-transform: translateY(0);        
+                transform: translateY(0);        
+            }
+        }
+        
+        @-o-keyframes testim-content-in {
+            from {
+                opacity: 0;
+                -o-transform: translateY(100%);
+                transform: translateY(100%);
+            }
+            
+            to {
+                opacity: 1;
+                -o-transform: translateY(0);        
+                transform: translateY(0);        
+            }
+        }
+        
+        @keyframes testim-content-in {
+            from {
+                opacity: 0;
+                transform: translateY(100%);
+            }
+            
+            to {
+                opacity: 1;
+                transform: translateY(0);        
+            }
+        }
+        
+        @-webkit-keyframes testim-content-out {
+            from {
+                opacity: 1;
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+            
+            to {
+                opacity: 0;
+                -webkit-transform: translateY(-100%);        
+                transform: translateY(-100%);        
+            }
+        }
+        
+        @-moz-keyframes testim-content-out {
+            from {
+                opacity: 1;
+                -moz-transform: translateY(0);
+                transform: translateY(0);
+            }
+            
+            to {
+                opacity: 0;
+                -moz-transform: translateY(-100%);        
+                transform: translateY(-100%);        
+            }
+        }
+        
+        @-ms-keyframes testim-content-out {
+            from {
+                opacity: 1;
+                -ms-transform: translateY(0);
+                transform: translateY(0);
+            }
+            
+            to {
+                opacity: 0;
+                -ms-transform: translateY(-100%);        
+                transform: translateY(-100%);        
+            }
+        }
+        
+        @-o-keyframes testim-content-out {
+            from {
+                opacity: 1;
+                -o-transform: translateY(0);
+                transform: translateY(0);
+            }
+            
+            to {
+                opacity: 0;
+                transform: translateY(-100%);        
+                transform: translateY(-100%);        
+            }
+        }
+        
+        @keyframes testim-content-out {
+            from {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            
+            to {
+                opacity: 0;
+                transform: translateY(-100%);        
+            }
+        }
+        
+        @-webkit-keyframes testim-show {
+            from {
+                opacity: 0;
+                -webkit-transform: scale(0);
+                transform: scale(0);
+            }
+            
+            to {
+                opacity: 1;
+                -webkit-transform: scale(1);       
+                transform: scale(1);       
+            }
+        }
+        
+        @-moz-keyframes testim-show {
+            from {
+                opacity: 0;
+                -moz-transform: scale(0);
+                transform: scale(0);
+            }
+            
+            to {
+                opacity: 1;
+                -moz-transform: scale(1);       
+                transform: scale(1);       
+            }
+        }
+        
+        @-ms-keyframes testim-show {
+            from {
+                opacity: 0;
+                -ms-transform: scale(0);
+                transform: scale(0);
+            }
+            
+            to {
+                opacity: 1;
+                -ms-transform: scale(1);       
+                transform: scale(1);       
+            }
+        }
+        
+        @-o-keyframes testim-show {
+            from {
+                opacity: 0;
+                -o-transform: scale(0);
+                transform: scale(0);
+            }
+            
+            to {
+                opacity: 1;
+                -o-transform: scale(1);       
+                transform: scale(1);       
+            }
+        }
+        
+        @keyframes testim-show {
+            from {
+                opacity: 0;
+                transform: scale(0);
+            }
+            
+            to {
+                opacity: 1;
+                transform: scale(1);       
+            }
+        }
+        
+        @-webkit-keyframes testim-hide {
+            from {
+                opacity: 1;
+                -webkit-transform: scale(1);       
+                transform: scale(1);       
+            }
+            
+            to {
+                opacity: 0;
+                -webkit-transform: scale(0);
+                transform: scale(0);
+            }
+        }
+        
+        @-moz-keyframes testim-hide {
+            from {
+                opacity: 1;
+                -moz-transform: scale(1);       
+                transform: scale(1);       
+            }
+            
+            to {
+                opacity: 0;
+                -moz-transform: scale(0);
+                transform: scale(0);
+            }
+        }
+        
+        @-ms-keyframes testim-hide {
+            from {
+                opacity: 1;
+                -ms-transform: scale(1);       
+                transform: scale(1);       
+            }
+            
+            to {
+                opacity: 0;
+                -ms-transform: scale(0);
+                transform: scale(0);
+            }
+        }
+        
+        @-o-keyframes testim-hide {
+            from {
+                opacity: 1;
+                -o-transform: scale(1);       
+                transform: scale(1);       
+            }
+            
+            to {
+                opacity: 0;
+                -o-transform: scale(0);
+                transform: scale(0);
+            }
+        }
+        
+        @keyframes testim-hide {
+            from {
+                opacity: 1;
+                transform: scale(1);       
+            }
+            
+            to {
+                opacity: 0;
+                transform: scale(0);
+            }
+        }
+        
+        @media all and (max-width: 300px) {
+            body {
+                font-size: 14px;
+            }
+        }
+        
+        @media all and (max-width: 500px) {
+            .testim .arrow {
+                font-size: 1.5em;
+            }
+            
+            .testim .cont div p {
+                line-height: 25px;
+            }
+        
+        }
+            </style>
+
+</head>
+
+<body style="height: 100vh;">
+
+    <!-- Preloader Start -->
+    <div class="se-pre-con"></div>
+    <!-- Preloader Ends -->
+
+    
+
+
+    <!-- Header 
+    ============================================= -->
+    <header id="home" style="position: sticky;top: 0px;">
+
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-default bg-theme dark attr-border bootsnav">
+
+            <!-- Start Top Search -->
+            <div class="container">
+                <div class="row">
+                    <div class="top-search">
+                        <div class="input-group">
+                            <form action="#">
+                                <input type="text" name="text" class="form-control" placeholder="Search">
+                                <button type="submit">
+                                    <i class="ti-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Top Search -->
+
+            <div class="container">
+
+
+
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                       
+                        <img src="assets/img/ccclogo.png" class="logo desktop" alt="Logo" width="280px">
+                    </a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li>
+                            <a href="index-3.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about-us.html">About</a>
+                        </li>
+                        <li>
+                            <a href="doctors.html">Doctors</a>
+                        </li>
+                        <li>
+                            <a href="departments-2.html">Departments</a>
+                        </li>
+                        <li>
+                            <a href="#">Blogs</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+        <!-- End Navigation -->
+
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Breadcrumb 
+    ============================================= -->
+    <div class="breadcrumb-area bg-gradient text-center">
+        <!-- Fixed BG -->
+        <div class="fixed-bg" style="background-image: url(assets/img/banners/brdcrmb-contact.jpg);"></div>
+        <!-- Fixed BG -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h1>Contact Us</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="index-3.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li class="active" style="text-decoration: none;color: white;" >Contact.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumb -->
+
+    <!-- Start Contact Area  
+    ============================================= -->
+    <div class="container">
+        <section id="testim" class="testim">
+                 <div class="testim-cover">
+                    <div class="wrap">
+        
+                        <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+                        <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
+                        <ul id="testim-dots" class="dots">
+                            <li class="dot active"></li><!--
+                            --><li class="dot"></li><!--
+                            --><li class="dot"></li><!--
+                            --><li class="dot"></li><!--
+                            --><li class="dot"></li>
+                        </ul>
+                        <div id="testim-content" class="cont">
+                            
+                            <div class="active">
+                                <div class="img"><img src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/kartik-aaryan-1045198-08-12-2017-06-34-11.jpg" alt=""></div>
+                                <h2>Lorem P. Ipsum</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                            </div>
+        
+                            <div>
+                                <div class="img"><img src="https://timesofindia.indiatimes.com/thumb/msid-75752690,width-800,height-600,resizemode-4/75752690.jpg" alt=""></div>
+                                <h2>Mr. Lorem Ipsum</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                            </div>
+        
+                            <div>
+                                <div class="img"><img src="https://p16.muscdn.com/img/musically-maliva-obj/1627333501517830~c5_720x720.jpeg" alt=""></div>
+                                <h2>Lorem Ipsum</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                            </div>
+        
+                            <div>
+                                <div class="img"><img src="https://p16-sg-default.akamaized.net/aweme/1080x1080/tiktok-obj/1666413671597057.jpeg" alt=""></div>
+                                <h2>Lorem De Ipsum</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                            </div>
+        
+                            <div>
+                                <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSKLJe1Lrz2N3ufVSwQokSJ79jGBbIptXuVnsdxMmNUlE14ohwp&usqp=CAU" alt=""></div>
+                                <h2>Ms. Lorem R. Ipsum</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                            </div>
+        
+                        </div>
+        
+                    </div>
+                 </div>
+            </section>
+        </div>
+    <!-- End Contact -->
+
+    <div class="container myreview">
+        <section id="testim" class="testim">
+                 <div class="testim-cover">
+                    <div class="wrap">
+        
+                        <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+                        <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
+                        <ul id="testim-dots" class="dots">
+                            <li class="dot active"></li><!--
+                            --><li class="dot"></li><!--
+                            --><li class="dot"></li><!--
+                            --><li class="dot"></li><!--
+                            --><li class="dot"></li>
+                        </ul>
+                        <div id="testim-content" class="cont">
+                            
+                            <div class="active">
+                                <div class="img"><img src="" alt=""></div>
+                                <h2>Lorem P. Ipsum</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                            </div>
+        
+                            <div>
+                                <div class="img"><img src="" alt=""></div>
+                                <h2>Mr. Lorem Ipsum</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                            </div>
+        
+                            <div>
+                                <div class="img"><img src="" alt=""></div>
+                                <h2>Lorem Ipsum</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                            </div>
+        
+                            <div>
+                                <div class="img"><img src="" alt=""></div>
+                                <h2>Lorem De Ipsum</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                            </div>
+        
+                            <div>
+                                <div class="img"><img src="" alt=""></div>
+                                <h2>Ms. Lorem R. Ipsum</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                            </div>
+        
+                        </div>
+        
+                    </div>
+                 </div>
+            </section>
+        </div>
+
+
+
+    <!-- Start Footer 
+    ============================================= -->
+    <footer class="bg-dark text-light">
+        <div class="container">
+            <div class="f-items default-padding">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 item">
+                        <div class="f-item about">
+                            <img src="assets/img/ccclogo.png" alt="Logo">
+                            <p>
+                                Caring for the community with commitment, compassion, and innovation, we aim to empower
+                                healthier lives through quality medical services and support at every stage.
+                            </p>
+                            <div class="address">
+                                <ul>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="flaticon-email"></i>
+                                        </div>
+                                        <div class="info">
+                                            <h5>Email:</h5>
+                                            <span><a
+                                                    href="mailto:childcentralclinic@gmail.com">childcentralclinic@gmail.com</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="flaticon-call"></i>
+                                        </div>
+                                        <div class="info">
+                                            <h5>Phone:</h5>
+                                            <span><a href="tel:+918050035925">+918050035925</a></span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="single-item col-lg-2 col-md-6 item">
+                        <div class="f-item link">
+                            <h4 class="widget-title">Department</h4>
+                            <ul>
+                                <li>
+                                    <a href="departments-2.html">General Pediatrics</a>
+                                </li>
+                                <li>
+                                    <a href="departments-2.html">Pediatric Dentistry</a>
+                                </li>
+                                <li>
+                                    <a href="departments-2.html">Pediatric Ophthalmology</a>
+                                </li>
+                                <li>
+                                    <a href="departments-2.html">Pediatric Nutrition</a>
+                                </li>
+                                <li>
+                                    <a href="departments-2.html">Pediatric Surgery</a>
+                                </li>
+                                <li>
+                                    <a href="departments-2.html">Eye testing</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="single-item col-lg-2 col-md-6 item">
+                        <div class="f-item link">
+                            <h4 class="widget-title">Quick Links</h4>
+                            <ul>
+                                <li>
+                                    <a href="index-3.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="about-us.html">About</a>
+                                </li>
+                                <li>
+                                    <a href="doctors.html">Doctors</a>
+                                </li>
+                                <li>
+                                    <a href="departments-2.html">Departments</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blogs</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="single-item col-lg-4 col-md-6 item">
+                        <div class="f-item branches">
+                            <div class="branches">
+                                <ul>
+                                    <li>
+                                        <strong>Reach Us:</strong>
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.6478805262304!2d77.62196537358825!3d12.930338415784632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae145b94c8b01d%3A0x5feb814282d2a017!2sChild%20Central%20Clinic!5e0!3m2!1sen!2sin!4v1729676427875!5m2!1sen!2sin"
+                                            width="100%" height="100%" style="border:0;" allowfullscreen=""
+                                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+                                    </li>
+                                    <li>
+                                        <strong>Address:</strong>
+                                        <span>BDA complex, 717/1, 16th Main, 6th B Cross Rd, behind Koramangala, next to
+                                            car house. Thank you, 3rd Block, Koramangala, Bengaluru, Karnataka
+                                            560034</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Start Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-center">
+                    <div class="col-lg-4">
+                        <p>Copyright &copy; 2024. Designed by <a href="#">Child Clinic Central</a></p>
+                    </div>
+                    <div class="col-lg-8 text-right social">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/profile.php?id=61567311547769"><i class="fab fa-facebook-f"></i> Facebook</a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/child_central_clinic_/"><i class="fab fa-instagram"></i> Instagram</a>
+                            </li>
+                            <li>
+                                <a href="https://x.com/child_central"><i class="fab fa-twitter"></i> Twitter</a>
+                            </li>
+
+                            <li><a href="https://www.linkedin.com/company/child-central-clinic/"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+                            <li><a href="https://in.pinterest.com/childcentralclinic/"><i class="fab fa-pinterest"></i>Pinterest</a></li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UC1C4pbk_nF5hoVAFXEmY0AQ"><i class="fab fa-youtube"></i> Youtube</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Bottom -->
+    </footer>
+    <!-- End Footer -->
+
+    <!-- jQuery Frameworks
+    ============================================= -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const testim = document.getElementById('testim'),
+                  testimDots = Array.prototype.slice.call(document.getElementById('testim-dots').children),
+                  testimContent = Array.prototype.slice.call(document.getElementById('testim-content').children),
+                  testimLeftArrow = document.getElementById('left-arrow'),
+                  testimRightArrow = document.getElementById('right-arrow');
+            let currentSlide = 0,
+                currentActive = 0,
+                testimTimer;
+    
+            function playSlide(slide) {
+                for (let k = 0; k < testimDots.length; k++) {
+                    testimContent[k].classList.remove('active', 'inactive');
+                    testimDots[k].classList.remove('active');
+                }
+    
+                if (slide < 0) {
+                    slide = currentSlide = testimContent.length - 1;
+                }
+    
+                if (slide > testimContent.length - 1) {
+                    slide = currentSlide = 0;
+                }
+    
+                testimContent[slide].classList.add('active');
+                testimDots[slide].classList.add('active');
+    
+                currentActive = currentSlide;
+    
+                clearTimeout(testimTimer);
+                testimTimer = setTimeout(function () {
+                    playSlide(currentSlide += 1);
+                }, 4500);
+            }
+    
+            testimLeftArrow.addEventListener('click', function () {
+                playSlide(currentSlide -= 1);
+            });
+    
+            testimRightArrow.addEventListener('click', function () {
+                playSlide(currentSlide += 1);
+            });
+    
+            testimDots.forEach(function (dot, index) {
+                dot.addEventListener('click', function () {
+                    playSlide(currentSlide = index);
+                });
+            });
+    
+            playSlide(currentSlide);
+        });
+    </script>
+    <script src="https://use.fontawesome.com/1744f3f671.js"></script>
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/modernizr.custom.13711.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/count-to.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/bootsnav.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
