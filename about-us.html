@@ -57,72 +57,76 @@
 
     <!-- Header 
     ============================================= -->
-    <header id="home">
 
-        <!-- Start Navigation -->
-        <nav class="navbar navbar-default bg-theme dark attr-border bootsnav">
+        <header id="home" style="position: sticky;top: 0;padding: 10px 20px;
+    z-index: 1000;">
 
-            <!-- Start Top Search -->
-            <div class="container">
-                <div class="row">
-                    <div class="top-search">
-                        <div class="input-group">
-                            <form action="#">
-                                <input type="text" name="text" class="form-control" placeholder="Search">
-                                <button type="submit">
-                                    <i class="ti-search"></i>
-                                </button>
-                            </form>
+            <!-- Start Navigation -->
+            <nav class="navbar navbar-default bg-theme dark attr-border bootsnav">
+    
+                <!-- Start Top Search -->
+                <div class="container">
+                    <div class="row">
+                        <div class="top-search">
+                            <div class="input-group">
+                                <form action="#">
+                                    <input type="text" name="text" class="form-control" placeholder="Search">
+                                    <button type="submit">
+                                        <i class="ti-search"></i>
+                                    </button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- End Top Search -->
-
-            <div class="container">
-
-
-
-                <!-- Start Header Navigation -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    <a class="navbar-brand" href="index.html">
-                        <!-- <img class="logosm" src="assets/img/ccclogo.png" class="logo mobile" alt="Logo"> -->
-                        <img src="assets/img/ccclogo.png" class="logo desktop" alt="Logo" width="280px">
-                    </a>
+                <!-- End Top Search -->
+    
+                <div class="container">
+    
+    
+    
+                    <!-- Start Header Navigation -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="index.html">
+                            <!-- <img class="logosm" src="assets/img/ccclogo.png" class="logo mobile" alt="Logo"> -->
+                            <img src="assets/img/ccclogo.png" class="logo desktop" alt="Logo" width="280px">
+                        </a>
+                    </div>
+                    <!-- End Header Navigation -->
+    
+                    <div class="collapse navbar-collapse" id="navbar-menu">
+                        <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                            <li>
+                                <a href="index-3.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="about-us.html">About</a>
+                            </li>
+                            <li>
+                                <a href="doctors.html">Doctors</a>
+                            </li>
+                            <li>
+                                <a href="departments-2.html">Departments</a>
+                            </li>
+                            <li>
+                                <a href="#">Blogs</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <!-- End Header Navigation -->
+    
+            </nav>
+            <!-- End Navigation -->
+    
+        </header>
 
-                <div class="collapse navbar-collapse" id="navbar-menu">
-                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-                        <li>
-                            <a href="index-3.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="about-us.html">About</a>
-                        </li>
-                        <li>
-                            <a href="doctors.html">Doctors</a>
-                        </li>
-                        <li>
-                            <a href="departments-2.html">Departments</a>
-                        </li>
-                        <li>
-                            <a href="#">Blogs</a>
-                        </li>
-                        <li>
-                            <a href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-        </nav>
-        <!-- End Navigation -->
-
-    </header>
+    
     <!-- End Header -->
 
     <!-- End Header -->
@@ -149,15 +153,14 @@
     </div>
     <!-- End Breadcrumb -->
 
-    <!-- Start About
-    ============================================= -->
-    <div class="about-area bg-gray default-padding relative">
 
-        <!-- Shape -->
+    
+    <!-- <div class="about-area bg-gray default-padding relative">
+
         <div class="shape-left-top shape">
             <img src="assets/img/shape/1.png" alt="Shape">
         </div>
-        <!-- End Shape -->
+       
 
         <div class="container">
             <div class="row">
@@ -211,13 +214,144 @@
 
             </div>
         </div>
-    </div>
+    </div> -->
    
     <!-- End About -->
 
+       <!-- mission vision history 
+    ============================================= -->
+    <div class="doctors-area bg-gray" style="padding-bottom: 100px;padding-top: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h4>OUR MISSSION VISION HISTORY</h4>
+                        <h2 style="color:  #adc32b;">Child Central Clinic</h2>
+                        <p>
+                            Our mission is to provide exceptional pediatric care, guided by our vision of healthy
+                            children, and backed by our history.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="doctor-items">
+                <div class="row">
+
+                    <div class="col-lg-4">
+                        <ul id="tabs" class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a href="" data-target="#tab1" data-toggle="tab" class="nav-link">
+                                    <i class="flaticon-cardiologist"></i>
+                                    <span>Mission</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" data-target="#tab2" data-toggle="tab" class="nav-link">
+                                    <i class="flaticon-dermatologist"></i>
+                                    <span>Vision</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" data-target="#tab3" data-toggle="tab" class="nav-link">
+                                    <i class="flaticon-paramedic"></i>
+                                    <span>Opportunity</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-8">
+                        <div id="tabsContent" class="tab-content wow fadeInUp" data-wow-delay="0.5s"
+                            style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+
+                            <div id="tab1" class="tab-pane fade  active show">
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-lg-6 thumb">
+                                            <img src="assets/img/banners/about-07.jpg" alt="Thumb">
+                                        </div>
+                                        <div class="col-lg-6 info-box">
+                                            <div class="info">
+                                                <h4 style="color: #ADC32B;">Our Mission</h4>
+
+                                                <p>
+                                                    At Child Central Clinics we bring in all Pediatric services for your
+                                                    child under one roof.We believe in providing holistic pediatric care
+                                                    which will help in shaping up a healthy future for your child.
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div id="tab2" class="tab-pane fade">
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-lg-6 thumb">
+                                            <img src="assets/img/banners/vision-08.jpg" alt="Thumb">
+                                        </div>
+                                        <div class="col-lg-6 info-box">
+                                            <div class="info">
+                                                <h4 style="color: #ADC32B;">Vision</h4>
+
+                                                <p>
+                                                    Our team of experienced doctors believe in providing exceptional
+                                                    health service for your child.
+                                                    Our comprehensive Pediatric health checkup programs aim at
+                                                    prevention and early detection of pediatric issues.
+                                                    We listen..We care..We are always there for your child
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="tab3" class="tab-pane fade">
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-lg-6 thumb">
+                                            <img src="assets/img/banners/abt_us-opp.jpg" alt="Thumb">
+                                        </div>
+                                        <div class="col-lg-6 info-box">
+                                            <div class="info">
+                                                <h4 style="color: #ADC32B;">Opportunity</h4>
+
+                                                <p>
+                                                    At Child Central Clinic, we are always looking for passionate and
+                                                    dedicated professionals
+                                                    who are committed to making a difference in pediatric healthcare. If
+                                                    you are driven by
+                                                    compassion, innovation, and a desire to help children grow healthier
+                                                    and stronger, we invite
+                                                    you to join our team.
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End mission vision history -->
+
 
     <!-- CALL  -->
-    <div class="facilites-area default-padding-bottom ">
+    <div class="facilites-area default-padding-bottom " style="margin-top: 80px;margin-bottom: 80px;">
         <div class="container">
             <div class="facilites-box">
                 <div class="row align-center">
@@ -355,148 +489,22 @@
             <p class="founder-message-text">
                 Anagha Pandit is a clinical psychologist with 14+ years of experience providing compassionate and
                 evidence-based mental health care. <br>
-                She holds a Masters degree in Clinical Psychology from S.N.D.T. Women's University, Mumbai (Pune
-                Campus). Her expertise in Cognitive Behavioral Therapy (CBT) and Neuro-Linguistic Programming (NLP)
-                equips her to address a broad spectrum of psychological concerns. <br>
-                Anagha specializes in working across age groups like children, adolescents, young adults, and adults, tailoring her therapeutic approach to meet the unique needs of each individual. By drawing from a variety of therapeutic interventions, she offers comprehensive and personalized intervention. She is also a Parent Coach, helping parents navigate the challenges of modern parenting through individual and group sessions.  <br>
-                Anagha is also a certified Life Skills trainer. As a guest speaker and mental health expert, she facilitates corporate sessions on mental wellness, listening circles, and psychological first aid, etc. carefully curated to suit the requirements of the clients.
+                
+                
             </p>
+
+            <details>
+                <summary>Read More</summary>
+                <p  class="founder-message-text">She holds a Masters degree in Clinical Psychology from S.N.D.T. Women's University,(Pune Campus). Her expertise in Cognitive Behavioral Therapy (CBT) and Neuro-Linguistic Programming (NLP) equips her to address a broad spectrum of psychological concerns.</p>
+              </details>
+\
         </div>
     </section>
     <!-- founder -->
 
     <!-- founder  -->
 
-    <!-- mission vision history 
-    ============================================= -->
-    <div class="doctors-area bg-gray" style="padding-bottom: 100px;padding-top: 100px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="site-heading text-center">
-                        <h4>OUR MISSSION VISION HISTORY</h4>
-                        <h2 style="color:  #adc32b;">Child Central Clinic</h2>
-                        <p>
-                            Our mission is to provide exceptional pediatric care, guided by our vision of healthy
-                            children, and backed by our history.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="doctor-items">
-                <div class="row">
-
-                    <div class="col-lg-4">
-                        <ul id="tabs" class="nav nav-tabs">
-                            <li class="nav-item">
-                                <a href="" data-target="#tab1" data-toggle="tab" class="nav-link">
-                                    <i class="flaticon-cardiologist"></i>
-                                    <span>Mission</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="" data-target="#tab2" data-toggle="tab" class="nav-link">
-                                    <i class="flaticon-dermatologist"></i>
-                                    <span>Vision</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="" data-target="#tab3" data-toggle="tab" class="nav-link">
-                                    <i class="flaticon-paramedic"></i>
-                                    <span>Opportunity</span>
-                                </a>
-                            </li>
-
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-8">
-                        <div id="tabsContent" class="tab-content wow fadeInUp" data-wow-delay="0.5s"
-                            style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
-
-                            <div id="tab1" class="tab-pane fade  active show">
-                                <div class="item">
-                                    <div class="row">
-                                        <div class="col-lg-6 thumb">
-                                            <img src="assets/img/banners/about-07.jpg" alt="Thumb">
-                                        </div>
-                                        <div class="col-lg-6 info-box">
-                                            <div class="info">
-                                                <h4 style="color: #ADC32B;">Our Mission</h4>
-
-                                                <p>
-                                                    At Child Central Clinics we bring in all Pediatric services for your
-                                                    child under one roof.We believe in providing holistic pediatric care
-                                                    which will help in shaping up a healthy future for your child.
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div id="tab2" class="tab-pane fade">
-                                <div class="item">
-                                    <div class="row">
-                                        <div class="col-lg-6 thumb">
-                                            <img src="assets/img/banners/vision-08.jpg" alt="Thumb">
-                                        </div>
-                                        <div class="col-lg-6 info-box">
-                                            <div class="info">
-                                                <h4 style="color: #ADC32B;">Vision</h4>
-
-                                                <p>
-                                                    Our team of experienced doctors believe in providing exceptional
-                                                    health service for your child.
-                                                    Our comprehensive Pediatric health checkup programs aim at
-                                                    prevention and early detection of pediatric issues.
-                                                    We listen..We care..We are always there for your child
-                                                </p>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div id="tab3" class="tab-pane fade">
-                                <div class="item">
-                                    <div class="row">
-                                        <div class="col-lg-6 thumb">
-                                            <img src="assets/img/banners/abt_us-opp.jpg" alt="Thumb">
-                                        </div>
-                                        <div class="col-lg-6 info-box">
-                                            <div class="info">
-                                                <h4 style="color: #ADC32B;">Opportunity</h4>
-
-                                                <p>
-                                                    At Child Central Clinic, we are always looking for passionate and
-                                                    dedicated professionals
-                                                    who are committed to making a difference in pediatric healthcare. If
-                                                    you are driven by
-                                                    compassion, innovation, and a desire to help children grow healthier
-                                                    and stronger, we invite
-                                                    you to join our team.
-                                                </p>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End mission vision history -->
+ 
 
 
 

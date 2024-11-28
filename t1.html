@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Navbar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0; /* Sticks to the top of the viewport */
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      z-index: 1000; /* Ensures it stays above other elements */
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      padding: 20px;
+      height: 2000px; /* To simulate a long page */
+      background: linear-gradient(to bottom, #fff, #ddd);
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="content">
+    <h1>Scroll Down</h1>
+    <p>This is a page with a sticky navbar.</p>
+    <p>Scroll to see how the navbar sticks to the top.</p>
+  </div>
+</body>
+</html>
