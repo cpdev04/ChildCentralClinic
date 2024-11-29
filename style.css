@@ -124,11 +124,17 @@ body,
   display: inline-block !important;
 }
 
-.whytxt2{
+.whytxt2 {
   font-size: 22px;
   color: #0b0b0b;
   font-weight: 600;
   padding: 0px 0px 10px 0px !important;
+}
+
+.callus {
+  font-size: 25px !important;
+  color: #0087a5 !important;
+  font-weight: 600 !important;
 }
 
 
@@ -536,18 +542,30 @@ input {
 }
 
 @media (max-width:448px) {
+
+  .contacttxt{
+    font-size: 25px;
+  }
+
+  .callus{
+    font-size: 18px !important;
+    text-align: start;
+  }
   .testimonial-text {
     font-size: 14px;
     color: #0b0b0b;
     padding: 0px 20px !important;
     text-align: start;
-}
+  }
+
   .whytxt2 {
     font-size: 18px;
   }
-  .text-why{
+
+  .text-why {
     font-size: 33px !important;
   }
+
   .s-details {
     font-size: 17px !important;
   }

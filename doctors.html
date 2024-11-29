@@ -26,6 +26,7 @@
     <link href="assets/css/bootsnav.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/0b170b98a9.js" crossorigin="anonymous"></script>
     <!-- ========== End Stylesheet ========== -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -50,7 +51,7 @@
 
     <!-- Header 
     ============================================= -->
-    <header id="home">
+    <header class="bignav"  id="home" style="position: sticky;top: 0;z-index: 1000;">
 
         <!-- Start Navigation -->
         <nav class="navbar navbar-default bg-theme dark attr-border bootsnav">
@@ -81,10 +82,13 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <a class="navbar-brand" href="index.html">
-                       
-                        <img src="assets/img/cclogo.png" class="logo desktop" alt="Logo" width="230px">
+                    <a class="navbar-brand" href="index-3.html">
+
+                        <img src="assets/img/cclogo.png" class="logo desktop mylogo" alt="Logo" width="220px">
+
                     </a>
+
+                    <a href="tel:+918050035925"><button class="cust-btn">Book Appointment</button></a>
                 </div>
                 <!-- End Header Navigation -->
 
@@ -99,14 +103,97 @@
                         <li>
                             <a href="doctors.html">Doctors</a>
                         </li>
-                        <li>
-                            <a href="departments-2.html">Departments</a>
-                        </li>
+                         <li></li>
                         <li></li>
                         <li>
                             <a href="contact.html">Contact</a>
                         </li>
+                        <!-- <li><a href=""><i class="fa-solid fa-phone"></i></a></li> -->
+                        <li><a href=""><i class=" fa-regular fa-envelope"></i></a></li>
+                        <li><a href=""> <i class=" fas fa-map-marker-alt"></i></a></li>
                     </ul>
+                </div>
+
+                <div>
+
+                </div>
+            </div>
+
+        </nav>
+        <!-- End Navigation -->
+
+    </header>
+    <header class="smallnav" id="home" style="position: sticky;top: 0;z-index: 1000;">
+
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-default bg-theme dark attr-border bootsnav">
+
+            <!-- Start Top Search -->
+            <div class="container">
+                <div class="row">
+                    <div class="top-search">
+                        <div class="input-group">
+                            <form action="#">
+                                <input type="text" name="text" class="form-control" placeholder="Search">
+                                <button type="submit">
+                                    <i class="ti-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Top Search -->
+
+            <div class="container">
+
+
+
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+
+                    <a class="navbar-brand" href="index-3.html">
+
+                        <img src="assets/img/cclogo.png" class="logo desktop mylogo" alt="Logo" style="width: 251px !important;height: 74px !important;">
+
+                    </a>
+                    <div class="mydiv">
+                    <a href="tel:+918050035925"><button class="cust-btn">Book Appointment</button></a>
+                    <a href=""><i class="fa-solid fa-phone"></i></a>
+                    <a href=""> <i class="fas fa-map-marker-alt"></i></a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i style="background-color: #032681;
+                        color: white;
+                        font-size: 20px;
+                        padding: 12px;
+                        height: 39px;" class="fa fa-bars"></i>
+                    </button>
+                    </div>
+                </div>
+                <!-- End Header Navigation -->
+
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li>
+                            <a href="index-3.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about-us.html">About</a>
+                        </li>
+                        <li>
+                            <a href="doctors.html">Doctors</a>
+                        </li>
+                         <li></li>
+                        <li></li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div>
+
                 </div>
             </div>
 
