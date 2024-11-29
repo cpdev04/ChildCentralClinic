@@ -2946,6 +2946,10 @@ nav.navbar.bootsnav {
 .navbar-brand>img {
   display: initial;
   height: auto;
+  /* added */
+  margin-top: -20px;
+  position: relative;
+  top: -10px;
 }
 
 .attr-nav > ul > li {

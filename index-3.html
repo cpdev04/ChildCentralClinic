@@ -33,6 +33,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0b170b98a9.js" crossorigin="anonymous"></script>
     <!-- ========== End Stylesheet ========== -->
 
 
@@ -91,7 +92,7 @@
 
     <!-- Header 
     ============================================= -->
-    <header id="home" style="position: sticky;top: 0;z-index: 1000;">
+    <header class="bignav"  id="home" style="position: sticky;top: 0;z-index: 1000;">
 
         <!-- Start Navigation -->
         <nav class="navbar navbar-default bg-theme dark attr-border bootsnav">
@@ -124,8 +125,8 @@
                     </button>
                     <a class="navbar-brand" href="index.html">
 
-                        <img src="assets/img/cclogo.png" class="logo desktop" alt="Logo" width="230px">
-                        
+                        <img src="assets/img/cclogo.png" class="logo desktop mylogo" alt="Logo" width="220px">
+
                     </a>
 
                     <a href="tel:+918050035925"><button class="cust-btn">Book Appointment</button></a>
@@ -150,8 +151,12 @@
                         <li>
                             <a href="contact.html">Contact</a>
                         </li>
+                        <!-- <li><a href=""><i class="fa-solid fa-phone"></i></a></li> -->
+                        <li><a href=""><i class=" fa-regular fa-envelope"></i></a></li>
+                        <li><a href=""> <i class=" fas fa-map-marker-alt"></i></a></li>
                     </ul>
                 </div>
+
                 <div>
 
                 </div>
@@ -161,6 +166,87 @@
         <!-- End Navigation -->
 
     </header>
+    <header class="smallnav" id="home" style="position: sticky;top: 0;z-index: 1000;">
+
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-default bg-theme dark attr-border bootsnav">
+
+            <!-- Start Top Search -->
+            <div class="container">
+                <div class="row">
+                    <div class="top-search">
+                        <div class="input-group">
+                            <form action="#">
+                                <input type="text" name="text" class="form-control" placeholder="Search">
+                                <button type="submit">
+                                    <i class="ti-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Top Search -->
+
+            <div class="container">
+
+
+
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+
+                    <a class="navbar-brand" href="index.html">
+
+                        <img src="assets/img/cclogo.png" class="logo desktop mylogo" alt="Logo" style="width: 251px !important;height: 74px !important;">
+
+                    </a>
+                    <div class="mydiv">
+                    <a href="tel:+918050035925"><button class="cust-btn">Book Appointment</button></a>
+                    <a href=""><i class="fa-solid fa-phone"></i></a>
+                    <a href=""> <i class="fas fa-map-marker-alt"></i></a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i style="background-color: #032681;
+                        color: white;
+                        font-size: 20px;
+                        padding: 12px;
+                        height: 39px;" class="fa fa-bars"></i>
+                    </button>
+                    </div>
+                </div>
+                <!-- End Header Navigation -->
+
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li>
+                            <a href="index-3.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about-us.html">About</a>
+                        </li>
+                        <li>
+                            <a href="doctors.html">Doctors</a>
+                        </li>
+                        <li>
+                            <a href="departments-2.html">Departments</a>
+                        </li>
+                        <li></li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div>
+
+                </div>
+            </div>
+
+        </nav>
+        <!-- End Navigation -->
+
+    </header>
+
 
 
 
@@ -309,13 +395,16 @@
                 <div class="col-lg-6 thumb">
                     <div class="thumb-box">
                         <img src="assets/img/overview.jpg" alt="Thumb">
-                       
+
                     </div>
                 </div>
 
                 <div class="col-lg-6 info">
                     <!-- <h5 class="s3">About Us</h5> -->
-                    <h2 class="poppins-black" style="color: #0087a5;"> <span style="font-size: 45px !important;"> Welcome to  <br> Child Central Clinic</span>  <br> <span style="font-size: 25px !important;color: #000000 !important;"> Your Child’s One-Stop Health Hub</span> </h2>
+                    <h2 class="poppins-black" style="color: #0087a5;"> <span style="font-size: 45px !important;">
+                            Welcome to <br> Child Central Clinic</span> <br> <span
+                            style="font-size: 25px !important;color: #000000 !important;"> Your Child’s One-Stop Health
+                            Hub</span> </h2>
                     <p style="color: black;">
                         We are committed to providing top-notch pediatric care under one roof. Our expert team of
                         pediatricians and specialists is dedicated to nurturing the health and well-being of children
@@ -347,20 +436,19 @@
                                     width="60px"> <span style="margin-left: 10px;">More Experience</span></h5>
                         </li>
                         <li>
-                            <img src="assets/img/icon/child_healthcare.png" alt="facilities"
-                                    width="60px">
+                            <img src="assets/img/icon/child_healthcare.png" alt="facilities" width="60px">
                             <h5 class="abouttxt"> <span style="margin-left: 10px;text-align: start !important;">
-                                &nbsp;All child healthcare &nbsp;&nbsp;&nbsp; under one-roof
-                            </span> </h5>
+                                    &nbsp;All child healthcare &nbsp;&nbsp;&nbsp; under one-roof
+                                </span> </h5>
                         </li>
                         <li>
                             <h5 class="abouttxt"><img src="assets/img/icon/healthcare.png" alt="Seamless care"
                                     width="60px"> <span style="margin-left: 10px;">Seamless care</span></h5>
                         </li>
                         <li>
-                            <img src="assets/img/icon/expert.png" alt="expert"
-                                    width="60px"> 
-                            <h5 class="abouttxt"><span style="margin-left: 10px;white-space: nowrap;">Unparalleled expertise</span></h5>
+                            <img src="assets/img/icon/expert.png" alt="expert" width="60px">
+                            <h5 class="abouttxt"><span style="margin-left: 10px;white-space: nowrap;">Unparalleled
+                                    expertise</span></h5>
                         </li>
                     </ul>
 
@@ -382,7 +470,8 @@
         <div class="site-heading text-center">
             <h4 class="s1">Explore Our Services</h4>
             <h2 class="s2"></h2>
-            <p class="color" style="font-size: 22px;color: #0b0b0b;font-weight: 600;padding: 0px 0px !important;margin-top: -4px">
+            <p class="color"
+                style="font-size: 22px;color: #0b0b0b;font-weight: 600;padding: 0px 0px !important;margin-top: -4px">
                 Explore our department for comprehensive services, expert care, and innovative solutions tailored to
                 you.
             </p>
@@ -397,7 +486,8 @@
                                 <div class="icon">
                                     <img src="assets/img/icon/icons-03.png" alt="Icon">
                                 </div>
-                                <h4 class="poppins-black" style="font-size: 20px;color: rgb(255, 255, 255);">General Pediatrics</h4>
+                                <h4 class="poppins-black" style="font-size: 20px;color: rgb(255, 255, 255);">General
+                                    Pediatrics</h4>
                                 <br><br>
 
                             </a>
@@ -406,11 +496,12 @@
                     <!-- End Single Item -->
                     <div class="col-lg-3 col-md-6 single-item">
                         <div class="item">
-                            <a  style="background-color: #0087A5 !important;">
+                            <a style="background-color: #0087A5 !important;">
                                 <div class="icon">
                                     <img src="assets/img/icon/icons-26.png" alt="Icon">
                                 </div>
-                                <h4 class="poppins-black" style="font-size: 20px;color: rgb(255, 255, 255);">Pediatric health checkup</h4>
+                                <h4 class="poppins-black" style="font-size: 20px;color: rgb(255, 255, 255);">Pediatric
+                                    health checkup</h4>
                                 <br>
 
                             </a>
@@ -420,11 +511,12 @@
                     <!-- Single Item -->
                     <div class="col-lg-3 col-md-6 single-item">
                         <div class="item">
-                            <a  style="background-color: #F05359;">
+                            <a style="background-color: #F05359;">
                                 <div class="icon">
                                     <img src="assets/img/icon/img-29.png" alt="Icon">
                                 </div>
-                                <h4 class="poppins-black" style="font-size: 20px;color: rgb(255, 255, 255);">Pediatric Dentistry</h4>
+                                <h4 class="poppins-black" style="font-size: 20px;color: rgb(255, 255, 255);">Pediatric
+                                    Dentistry</h4>
                                 <br><br>
 
                             </a>
@@ -440,7 +532,8 @@
                                 <div class="icon">
                                     <img src="assets/img/icon/ChildPsychologist.png" alt="Icon">
                                 </div>
-                                <h4 class="poppins-black" style="font-size: 20px;color: rgb(255, 255, 255);">Child Psychologist</h4>
+                                <h4 class="poppins-black" style="font-size: 20px;color: rgb(255, 255, 255);">Child
+                                    Psychologist</h4>
                                 <br>
                                 <br>
                             </a>
@@ -479,11 +572,13 @@
     color: #0087A5 !important;
     text-transform: none !important;
     display: inline-block !important;"> Choose Us ? </span></h2>
-                        <p class="color1" style="font-size: 22px;color: #0b0b0b;font-weight: 600;padding: 0px 0px 10px 0px !important;">
-                            Trust our expert team for personalized care, advanced technology, and unwavering dedication to your child’s health
+                        <p class="color1"
+                            style="font-size: 22px;color: #0b0b0b;font-weight: 600;padding: 0px 0px 10px 0px !important;">
+                            Trust our expert team for personalized care, advanced technology, and unwavering dedication
+                            to your child’s health
                         </p>
 
-                    
+
                         <ul>
                             <li>
                                 <h5>Experienced Team</h5>
@@ -527,11 +622,11 @@
                 </div>
             </div>
         </div>
-      
+
         <div class="shape-bottom shape">
             <img src="assets/img/shape/12_1.png" alt="Shape">
         </div>
-    
+
     </div>
     <!-- End Choose Us -->
 
@@ -602,37 +697,37 @@
         <br>
         <h4 class="s1">Testimonials</h4><br><br>
         <div class="testimonial-box">
-          <!-- Left Arrow -->
-          <button class="arrow left-arrow">&#10094;</button>
-    
-          <!-- Testimonial Content -->
-          <div class="testimonial-content">
-            <img src="assets/img/800x800.png" alt="Author Image" class="testimonial-image">
-            <h3 class="testimonial-author">Mohammed Mfa</h3>
-            <br><br><br>
+            <!-- Left Arrow -->
+            <button class="arrow left-arrow">&#10094;</button>
 
-    
+            <!-- Testimonial Content -->
+            <div class="testimonial-content">
+                <img src="assets/img/800x800.png" alt="Author Image" class="testimonial-image">
+                <h3 class="testimonial-author">Mohammed Mfa</h3>
+                <br><br><br>
 
-            <p class="testimonial-text">
-                One of the finest Doctor Jagdish Chinnappa Sir, Child Specialist, Manipal Hospital Senior
-                Doctor (Bengaluru H.A.L Road) and Very Respected Person, We are visiting to his clinic
-                from Langford Town Clinic since 1993 till date to koramangala Clinic.
-            </p>
-          </div>
-    
-          <!-- Right Arrow -->
-          <button class="arrow right-arrow">&#10095;</button>
+
+
+                <p class="testimonial-text">
+                    One of the finest Doctor Jagdish Chinnappa Sir, Child Specialist, Manipal Hospital Senior
+                    Doctor (Bengaluru H.A.L Road) and Very Respected Person, We are visiting to his clinic
+                    from Langford Town Clinic since 1993 till date to koramangala Clinic.
+                </p>
+            </div>
+
+            <!-- Right Arrow -->
+            <button class="arrow right-arrow">&#10095;</button>
         </div>
-    
+
         <!-- Dot Indicators -->
         <div class="testimonial-dots">
-          <span class="dot" data-index="0"></span>
-          <span class="dot" data-index="1"></span>
-          <span class="dot" data-index="2"></span>
-          <span class="dot" data-index="3"></span>
-          <span class="dot active" data-index="4"></span>
+            <span class="dot" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+            <span class="dot" data-index="3"></span>
+            <span class="dot active" data-index="4"></span>
         </div>
-      </div>
+    </div>
     <!-- review -->
 
 
@@ -668,21 +763,26 @@
                             </p>
                             <div class="address">
                                 <ul>
-                                    <h1 style="font-weight: 700 !important;font-size: 22px !important;">Connect With Us</h1>
+                                    <h1 style="font-weight: 700 !important;font-size: 22px !important;">Connect With Us
+                                    </h1>
                                     <li>
-                                        
+
                                         <div class="icon">
                                             <a href="https://www.facebook.com/profile.php?id=61567311547769"><i
-                                                class="fab fa-facebook-f"></i> </a>
-                                        <a href="https://www.instagram.com/child_central_clinic_/"><i class="fab fa-instagram"></i></a>
-                                        <a  href="https://x.com/child_central"><i class="fab fa-twitter"></i></a>
-                                        <a href="https://www.linkedin.com/company/child-central-clinic/"><i class="fab fa-linkedin"></i></a>
-                                        <a href="https://in.pinterest.com/childcentralclinic/"><i class="fab fa-pinterest"></i></a>
-                                        <a  href="https://www.youtube.com/channel/UC1C4pbk_nF5hoVAFXEmY0AQ"><i class="fab fa-youtube"></i></a>
+                                                    class="fab fa-facebook-f"></i> </a>
+                                            <a href="https://www.instagram.com/child_central_clinic_/"><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a href="https://x.com/child_central"><i class="fab fa-twitter"></i></a>
+                                            <a href="https://www.linkedin.com/company/child-central-clinic/"><i
+                                                    class="fab fa-linkedin"></i></a>
+                                            <a href="https://in.pinterest.com/childcentralclinic/"><i
+                                                    class="fab fa-pinterest"></i></a>
+                                            <a href="https://www.youtube.com/channel/UC1C4pbk_nF5hoVAFXEmY0AQ"><i
+                                                    class="fab fa-youtube"></i></a>
                                         </div>
-                                      
+
                                     </li>
-                                 
+
                                 </ul>
                             </div>
                         </div>
@@ -765,20 +865,22 @@
                                         <div class="icon">
                                             <i class="flaticon-email m-2" style="font-size: 20px;color: white;"></i>
                                             <span><a
-                                                href="mailto:childcentralclinic@gmail.com">childcentralclinic@gmail.com</a></span>
+                                                    href="mailto:childcentralclinic@gmail.com">childcentralclinic@gmail.com</a></span>
                                         </div>
                                         <div class="info">
-                                           
-                                           
+
+
                                         </div>
                                     </li>
                                     <li>
                                         <div class="icon">
-                                            <i class="flaticon-call m-2"  style="font-size: 20px;color: white;"></i><span><a href="tel:+918050035925">+918050035925</a></span>
+                                            <i class="flaticon-call m-2"
+                                                style="font-size: 20px;color: white;"></i><span><a
+                                                    href="tel:+918050035925">+918050035925</a></span>
                                         </div>
-                                        <div class="info" >
-                                           
-                                            
+                                        <div class="info">
+
+
                                         </div>
                                     </li>
                                 </ul>
@@ -794,9 +896,11 @@
             <div class="container">
                 <div class="row align-center">
                     <div class="col-lg-4">
-                        <center><p>Copyright &copy; 2024. Designed by <a href="#">Child Clinic Central</a></p></center>
+                        <center>
+                            <p>Copyright &copy; 2024. Designed by <a href="#">Child Clinic Central</a></p>
+                        </center>
                     </div>
-                    
+
                 </div>
             </div>
         </div>

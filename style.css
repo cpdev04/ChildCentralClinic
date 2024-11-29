@@ -95,9 +95,20 @@ body,
   border-bottom-left-radius: 30px;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
-  margin-top: 25px;
+  margin-top: 35px;
+ 
 
 }
+
+.bignav {
+  display: block;
+}
+
+.smallnav{
+  display: none;
+}
+
+
 
 .cust-btn1 {
   background-color: #0087A5;
@@ -127,6 +138,10 @@ body,
 
 .color1 {
   color: #373737;
+}
+
+.mylogo {
+  width: 220px;
 }
 
 .cust-btn:hover,
@@ -485,13 +500,76 @@ input {
   max-width: 1400px;
 }
 
+@media (max-width:448px) {
+
+  .smallnav{
+    display: block;
+  }
+  
+  
+
+  .bignav{
+    display: none;
+  }
+
+  .mydiv {
+    margin-top: -28px;
+    padding-bottom: 20px;
+  }
+
+
+  .cust-btn {
+    margin-top: 0px;
+    padding: 7px 19px;
+  }
+
+  nav.navbar.bootsnav .navbar-toggle {
+    display: inline-block;
+    float: none;
+    margin-right: 0px;
+    margin-top: 15px;
+  }
+}
+
+
 @media (min-width:576px) {
+
   .container-medium {
     max-width: 540px;
+  }
+  
+  .hideicon{
+    display: none !important;
   }
 }
 
 @media (min-width:768px) {
+
+  .mydiv{
+    margin-top: -23px;
+    padding-bottom: 18px;
+  }
+
+  /* my css */
+  .cust-btn {
+    padding: 7px 19px;
+    position: relative;
+    top: -12px;
+  }
+
+  nav.navbar.bootsnav .navbar-brand {
+    position: relative;
+    top: 17px;
+}
+
+  
+  .hideicon{
+    display: none !important;
+  }
+
+
+
+  /* my css */
   .container-medium {
     max-width: 720px;
   }
@@ -2891,6 +2969,27 @@ body,
 .facilites-area .facilites-box .single-item .item .btn {
   margin-top: 5px;
 }
+
+/* icons */
+.fa-phone,
+.fa-map-marker-alt,
+.fa-envelope {
+  background-color: #032681;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  margin-top: -10px;
+}
+
+.fa-envelope:hover , .fa-map-marker-alt:hover , .fa-envelope :hover{
+  background-color: white;
+  color: #032681;
+  border: 1px solid #032681;
+}
+
+
+/* icons */
 
 /* ============================================================== 
      # Features
