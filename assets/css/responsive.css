@@ -481,11 +481,6 @@
     margin-bottom: 20px;
   }
 
-  .breadcrumb-area h1 {
-    /* font-size: 36px; */
-    font-size: 15px;
-    
-  }
 
   .banner-area p{
     font-size: 9px;
@@ -589,7 +584,7 @@
   }
 
   .banner-area.text-default h2 {
-    font-size: 36px;
+    font-size: 23px;
   }
 
   .banner-area.inc-shape .content::after {
