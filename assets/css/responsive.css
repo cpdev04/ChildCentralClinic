@@ -45,7 +45,8 @@
   }
 
   .banner-area.auto-height.fixed-thumb .double-items .info {
-    padding: 0;
+    /* padding: 0; */
+      padding: 140px 0px;
   }
 
   .banner-area.auto-height.fixed-thumb .double-items .thumb {
@@ -1187,7 +1188,7 @@
 /* Wide Mobile Layout: 480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
-
+ 
   .side {
     padding: 50px;
     width: 400px;
