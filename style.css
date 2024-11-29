@@ -501,10 +501,10 @@ input {
 }
 
 @media (max-width:448px) {
+  
 
-  .navbar-brand>img{
-    position: relative;
-    top: 5px;
+  .sm-padding{
+    padding: 85px 0px;
   }
 
   .smallnav{
@@ -548,9 +548,6 @@ input {
   }
 }
 
-@media (min-width:768px) {
-
-
 
   .mydiv{
     margin-top: -23px;
@@ -584,7 +581,7 @@ input {
   .logosm {
     display: block;
   }
-}
+
 
 @media (min-width:992px) {
   .container-medium {
@@ -608,6 +605,9 @@ input {
 @media (min-width:768px) {
   .container-full {
     max-width: 720px;
+  }
+  .sm-padding{
+    padding: 250px 0px 0px 0px !important;
   }
 }
 

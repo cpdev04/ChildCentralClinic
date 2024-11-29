@@ -393,6 +393,11 @@
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) {
 
+  .banner-area.text-default h2 {
+    font-size: 36px;
+    padding: 69px 0px;
+}
+
   /* Heading */
   h1 {
     font-size: 30px;
