@@ -482,7 +482,13 @@
   }
 
   .breadcrumb-area h1 {
-    font-size: 36px;
+    /* font-size: 36px; */
+    font-size: 20px;
+    
+  }
+
+  .banner-area p{
+    font-size: 11px;
   }
 
   .page-title-area {
