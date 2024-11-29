@@ -502,6 +502,11 @@ input {
 
 @media (max-width:448px) {
 
+  .navbar-brand>img{
+    position: relative;
+    top: 0px;
+  }
+
   .smallnav{
     display: block;
   }
@@ -544,6 +549,8 @@ input {
 }
 
 @media (min-width:768px) {
+
+
 
   .mydiv{
     margin-top: -23px;
