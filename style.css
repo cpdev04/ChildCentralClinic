@@ -96,7 +96,7 @@ body,
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
   margin-top: 35px;
- 
+
 
 }
 
@@ -104,10 +104,32 @@ body,
   display: block;
 }
 
-.smallnav{
+.smallnav {
   display: none;
 }
 
+.texth1abt {
+  font-size: 45px;
+}
+
+.myiconsw {
+  width: 60px;
+}
+
+.text-why {
+  font-weight: 900 !important;
+  font-size: 45px !important;
+  color: #0087A5 !important;
+  text-transform: none !important;
+  display: inline-block !important;
+}
+
+.whytxt2{
+  font-size: 22px;
+  color: #0b0b0b;
+  font-weight: 600;
+  padding: 0px 0px 10px 0px !important;
+}
 
 
 .cust-btn1 {
@@ -144,6 +166,11 @@ body,
   width: 220px;
 }
 
+.s-details {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
 .cust-btn:hover,
 .cust-btn1:hover,
 .cust-btn2:hover {
@@ -158,6 +185,14 @@ body,
 
 .aboutbtn {
   color: #000000 !important;
+}
+
+.servicedesc {
+  font-size: 22px;
+  color: #0b0b0b;
+  font-weight: 900;
+  padding: 0px 0px !important;
+  margin-top: -4px
 }
 
 .s1 {
@@ -501,19 +536,66 @@ input {
 }
 
 @media (max-width:448px) {
-  
+  .testimonial-text {
+    font-size: 14px;
+    color: #0b0b0b;
+    padding: 0px 20px !important;
+    text-align: start;
+}
+  .whytxt2 {
+    font-size: 18px;
+  }
+  .text-why{
+    font-size: 33px !important;
+  }
+  .s-details {
+    font-size: 17px !important;
+  }
 
-  .sm-padding{
+  .features-area .item a {
+    padding: 33px 30px !important;
+  }
+
+  .servicedesc {
+    font-size: 17px;
+  }
+
+  .s1 {
+    font-size: 32px !important;
+  }
+
+  .myiconsw {
+    width: 30px;
+  }
+
+  .about-area ul li h5 {
+    font-size: 13px !important;
+  }
+
+  .about-area ul li i {
+    font-size: 30px !important;
+  }
+
+  .texth1abt {
+    font-size: 33px;
+
+  }
+
+  .txtalign {
+    text-align: start;
+  }
+
+  .sm-padding {
     padding: 85px 0px;
   }
 
-  .smallnav{
+  .smallnav {
     display: block;
   }
-  
-  
 
-  .bignav{
+
+
+  .bignav {
     display: none;
   }
 
@@ -526,6 +608,8 @@ input {
   .cust-btn {
     margin-top: 0px;
     padding: 7px 19px;
+    position: relative;
+    top: 0px !important;
   }
 
   nav.navbar.bootsnav .navbar-toggle {
@@ -542,45 +626,45 @@ input {
   .container-medium {
     max-width: 540px;
   }
-  
-  .hideicon{
+
+  .hideicon {
     display: none !important;
   }
 }
 
 
-  .mydiv{
-    margin-top: -23px;
-    padding-bottom: 18px;
-  }
-
-  /* my css */
-  .cust-btn {
-    padding: 7px 19px;
-    position: relative;
-    top: -12px;
-  }
-
-  nav.navbar.bootsnav .navbar-brand {
-    position: relative;
-    top: 17px;
+.mydiv {
+  margin-top: -23px;
+  padding-bottom: 18px;
 }
 
-  
-  .hideicon{
-    display: none !important;
-  }
+/* my css */
+.cust-btn {
+  padding: 7px 19px;
+  position: relative;
+  top: -12px;
+}
+
+nav.navbar.bootsnav .navbar-brand {
+  position: relative;
+  top: 17px;
+}
+
+
+.hideicon {
+  display: none !important;
+}
 
 
 
-  /* my css */
-  .container-medium {
-    max-width: 720px;
-  }
+/* my css */
+.container-medium {
+  max-width: 720px;
+}
 
-  .logosm {
-    display: block;
-  }
+.logosm {
+  display: block;
+}
 
 
 @media (min-width:992px) {
@@ -606,7 +690,8 @@ input {
   .container-full {
     max-width: 720px;
   }
-  .sm-padding{
+
+  .sm-padding {
     padding: 250px 0px 0px 0px !important;
   }
 }
@@ -2989,7 +3074,9 @@ body,
   margin-top: -10px;
 }
 
-.fa-envelope:hover , .fa-map-marker-alt:hover , .fa-envelope :hover{
+.fa-envelope:hover,
+.fa-map-marker-alt:hover,
+.fa-envelope :hover {
   background-color: white;
   color: #032681;
   border: 1px solid #032681;
